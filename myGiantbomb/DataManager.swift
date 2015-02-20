@@ -8,7 +8,6 @@
 
 import Foundation
 
-let GBapiKey = "02f9d191e91dce081c2c28c04755ead9fd7934a9"
 let SearchQuery = "http://www.giantbomb.com/api/games/?field_list=api_detail_url%2Cid%2Cname%2Cdeck&filter=name:the%20last%20of%20us&format=json"
 
 class DataManager {
