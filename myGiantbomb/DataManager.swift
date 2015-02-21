@@ -8,14 +8,14 @@
 
 import Foundation
 
-let SearchQuery = "http://www.giantbomb.com/api/games/?field_list=api_detail_url%2Cid%2Cname%2Cdeck&format=json"
+let searchQuery = "http://www.giantbomb.com/api/games/?field_list=api_detail_url%2Cid%2Cname%2Cdeck&format=json"
 
 class DataManager {
     
     class func searchGiantbomb(query: NSString, success: ((GBData: NSData!) -> Void)) {
         let apiKey = loadApiKey()
-        let query = SearchQuery + "&api_key=" + apiKey + "&filter=name:" + query
-        loadDataFromURL(NSURL(string: query)!, completion:{(data, error) -> Void in
+        let fullQuery = searchQuery + "&api_key=" + apiKey + "&filter=name:" + query.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
+        loadDataFromURL(NSURL(string: fullQuery)!, completion:{(data, error) -> Void in
             if let urlData = data {
                 success(GBData: urlData)
             } else {
