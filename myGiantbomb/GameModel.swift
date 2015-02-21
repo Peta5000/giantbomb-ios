@@ -13,7 +13,7 @@ class GameModel: NSObject, Printable {
     let deck: String
     
     override var description: String {
-        return "Name: \(name), Deck: \(deck)\n"
+        return "\(name) \nDescription: \(deck)\n"
     }
     
     init(name: String?, deck: String?) {

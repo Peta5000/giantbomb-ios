@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var searchBar: UITextField!
-    @IBOutlet weak var resultList: UILabel!
+    @IBOutlet weak var searchResults: UITextView!
     @IBAction func search(sender: AnyObject) {
         DataManager.searchGiantbomb(searchBar.text) {(GBData) -> Void in
             let json = JSON(data: GBData)
@@ -26,7 +26,11 @@ class ViewController: UIViewController {
                 }
                 println(games)
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.resultList.text = games[0].description
+                    var result = ""
+                    for game in games {
+                        result = result + "\n" + game.description
+                    }
+                    self.searchResults.text = result
                 })
             }
         }
