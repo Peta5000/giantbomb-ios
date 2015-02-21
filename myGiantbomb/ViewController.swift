@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        DataManager.searchGiantbomb { (GBData) -> Void in
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var searchBar: UITextField!
+    @IBOutlet weak var resultList: UILabel!
+    @IBAction func search(sender: AnyObject) {
+        DataManager.searchGiantbomb(searchBar.text) {(GBData) -> Void in
             let json = JSON(data: GBData)
             if let gameArray = json["results"].array {
                 var games = [GameModel]()
@@ -23,8 +25,15 @@ class ViewController: UIViewController {
                     games.append(game)
                 }
                 println(games)
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.resultList.text = games[0].description
+                })
             }
         }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
 

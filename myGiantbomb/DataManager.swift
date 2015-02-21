@@ -8,13 +8,13 @@
 
 import Foundation
 
-let SearchQuery = "http://www.giantbomb.com/api/games/?field_list=api_detail_url%2Cid%2Cname%2Cdeck&filter=name:the%20last%20of%20us&format=json"
+let SearchQuery = "http://www.giantbomb.com/api/games/?field_list=api_detail_url%2Cid%2Cname%2Cdeck&format=json"
 
 class DataManager {
     
-    class func searchGiantbomb(success: ((GBData: NSData!) -> Void)) {
+    class func searchGiantbomb(query: NSString, success: ((GBData: NSData!) -> Void)) {
         let apiKey = loadApiKey()
-        let query = SearchQuery + "&api_key=" + apiKey
+        let query = SearchQuery + "&api_key=" + apiKey + "&filter=name:" + query
         loadDataFromURL(NSURL(string: query)!, completion:{(data, error) -> Void in
             if let urlData = data {
                 success(GBData: urlData)
