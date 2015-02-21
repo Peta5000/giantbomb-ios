@@ -16,6 +16,7 @@
 		0FC366CF1A9696E40032B036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC366CE1A9696E40032B036 /* Images.xcassets */; };
 		0FC366D51A96A28D0032B036 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366D41A96A28D0032B036 /* GameModel.swift */; };
 		0FC366D91A96A51F0032B036 /* GBapiKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FC366D81A96A51F0032B036 /* GBapiKey.txt */; };
+		0FF660B71A98F1CD00F5DFB0 /* giantbomb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF660B61A98F1CD00F5DFB0 /* giantbomb-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		0FC366CE1A9696E40032B036 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0FC366D41A96A28D0032B036 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		0FC366D81A96A51F0032B036 /* GBapiKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GBapiKey.txt; sourceTree = "<group>"; };
+		0FF660B61A98F1CD00F5DFB0 /* giantbomb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "giantbomb-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0FC3669E1A96966C0032B036 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FF660B61A98F1CD00F5DFB0 /* giantbomb-logo.png */,
 				0FC3669F1A96966C0032B036 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -170,6 +173,7 @@
 				TargetAttributes = {
 					0FC3669A1A96966C0032B036 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2P26PLWSKP;
 					};
 					0FC366AF1A96966D0032B036 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -203,6 +207,7 @@
 			files = (
 				0FC366CF1A9696E40032B036 /* Images.xcassets in Resources */,
 				0FC366D91A96A51F0032B036 /* GBapiKey.txt in Resources */,
+				0FF660B71A98F1CD00F5DFB0 /* giantbomb-logo.png in Resources */,
 				0FC366CD1A9696CA0032B036 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

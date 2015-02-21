@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var searchResults: UITextView!
     @IBAction func search(sender: AnyObject) {
+        searchBar.resignFirstResponder()
         DataManager.searchGiantbomb(searchBar.text) {(GBData) -> Void in
             let json = JSON(data: GBData)
             if let gameArray = json["results"].array {
@@ -28,14 +29,18 @@ class ViewController: UIViewController {
                 dispatch_async(dispatch_get_main_queue(), {
                     var result = ""
                     for game in games {
-                        result = result + "\n" + game.description
+                        result = result + game.description
                     }
-                    self.searchResults.text = result
+                    if result.isEmpty {
+                        self.searchResults.text = "no results available"
+                    } else {
+                        self.searchResults.text = result
+                    }
                 })
             }
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
