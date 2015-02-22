@@ -10,13 +10,13 @@
 		0FC366B71A96966D0032B036 /* myGiantbombTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366B61A96966D0032B036 /* myGiantbombTests.swift */; };
 		0FC366C71A9696CA0032B036 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366C01A9696CA0032B036 /* SwiftyJSON.swift */; };
 		0FC366C91A9696CA0032B036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366C21A9696CA0032B036 /* AppDelegate.swift */; };
-		0FC366CA1A9696CA0032B036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366C31A9696CA0032B036 /* ViewController.swift */; };
 		0FC366CC1A9696CA0032B036 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366C51A9696CA0032B036 /* DataManager.swift */; };
 		0FC366CD1A9696CA0032B036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC366C61A9696CA0032B036 /* Main.storyboard */; };
 		0FC366CF1A9696E40032B036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC366CE1A9696E40032B036 /* Images.xcassets */; };
 		0FC366D51A96A28D0032B036 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC366D41A96A28D0032B036 /* GameModel.swift */; };
 		0FC366D91A96A51F0032B036 /* GBapiKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FC366D81A96A51F0032B036 /* GBapiKey.txt */; };
 		0FF660B71A98F1CD00F5DFB0 /* giantbomb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF660B61A98F1CD00F5DFB0 /* giantbomb-logo.png */; };
+		0FF6611B1A9A74A800F5DFB0 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6611A1A9A74A800F5DFB0 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 		0FC366B61A96966D0032B036 /* myGiantbombTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myGiantbombTests.swift; sourceTree = "<group>"; };
 		0FC366C01A9696CA0032B036 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		0FC366C21A9696CA0032B036 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FC366C31A9696CA0032B036 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FC366C51A9696CA0032B036 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0FC366C61A9696CA0032B036 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0FC366CE1A9696E40032B036 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0FC366D41A96A28D0032B036 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		0FC366D81A96A51F0032B036 /* GBapiKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GBapiKey.txt; sourceTree = "<group>"; };
 		0FF660B61A98F1CD00F5DFB0 /* giantbomb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "giantbomb-logo.png"; sourceTree = "<group>"; };
+		0FF6611A1A9A74A800F5DFB0 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				0FC366CE1A9696E40032B036 /* Images.xcassets */,
 				0FC366C01A9696CA0032B036 /* SwiftyJSON.swift */,
 				0FC366C21A9696CA0032B036 /* AppDelegate.swift */,
-				0FC366C31A9696CA0032B036 /* ViewController.swift */,
+				0FF6611A1A9A74A800F5DFB0 /* SearchTableViewController.swift */,
 				0FC366C51A9696CA0032B036 /* DataManager.swift */,
 				0FC366C61A9696CA0032B036 /* Main.storyboard */,
 				0FC3669E1A96966C0032B036 /* Supporting Files */,
@@ -227,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FC366D51A96A28D0032B036 /* GameModel.swift in Sources */,
-				0FC366CA1A9696CA0032B036 /* ViewController.swift in Sources */,
+				0FF6611B1A9A74A800F5DFB0 /* SearchTableViewController.swift in Sources */,
 				0FC366CC1A9696CA0032B036 /* DataManager.swift in Sources */,
 				0FC366C91A9696CA0032B036 /* AppDelegate.swift in Sources */,
 				0FC366C71A9696CA0032B036 /* SwiftyJSON.swift in Sources */,
