@@ -13,9 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var searchResults: UITextView!
+    
     @IBAction func search(sender: AnyObject) {
         searchBar.resignFirstResponder()
-        DataManager.searchGiantbomb(searchBar.text) {(GBData) -> Void in
+        DataManager.searchGiantbomb(searchBar.text) {(GBData: NSData!) -> Void in
             let json = JSON(data: GBData)
             if let gameArray = json["results"].array {
                 var games = [GameModel]()
